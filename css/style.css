@@ -1,0 +1,157 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    width: 100%;
+    min-height: 70px;
+    background: dodgerblue;
+    float: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo, .menu, .icon, .burgerMenu{
+    min-width: 100px;
+    min-height: 70px;
+    float: left;
+}
+.logo{
+    margin-left: 10px;
+    font-size: 35px ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    float: left;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.MobileNav{
+    width: 100%;
+    min-height: 70px;
+    background: dodgerblue;
+    float: left;
+    display: none;
+    position: relative;
+    
+}
+.right{
+    float: right;
+}
+
+/* .menuDesign{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}  */
+
+.mbStyle{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.MobileNavMenu{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(159, 196, 234);
+    float: left;
+    position: fixed;
+    top: -100%;
+    left: 0px;
+    transition: 0.5s;
+    z-index: -1;
+}
+.xicon{
+    display: block;
+}
+
+.icon{
+    display: none;
+}
+
+.times{
+    float: left;
+    display: none;
+
+}
+
+.MobileNavMenuDeactivate{
+    top: 70px;
+}
+
+.MobileNavMenu ul{
+    padding: 0px;
+}
+
+.MobileNavMenu li{
+    width: 100%;
+    min-height: 50px;
+    float: left;
+    margin: 2px 0;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+}
+.MobileNavMenu li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.xicon{
+    display: block;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .nav {
+      display: none;
+    }
+    .MobileNav{
+        display: block;
+    }
+    .times{
+        float: left;
+        display: none;
+    }
+    .xicon{
+       display: block;
+    }
+    .icon{
+        display: none;
+    }
+}
